@@ -35,7 +35,6 @@ function pizzaPrice (pizza) {
 
 $(document).ready(function(){
   let pizza1 = new Pizza(0,0);
-  console.log(pizza1.size);
   $('input[type="checkbox"]').click(function(){
     if($(this).is(":checked")){
       pizza1.toppings +=1;
@@ -50,9 +49,8 @@ $(document).ready(function(){
       pizzaSizeConverter(pizza1);
       pizzaPrice(pizza1);
       $(".total").text(" " + "$" + pizza1.toppings);
-
-  });
-    
+      $("button#toppingAdd").hide();
+    }); 
   });
 
 

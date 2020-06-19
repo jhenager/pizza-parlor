@@ -1,21 +1,29 @@
 # _Pizza Parlor_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Pizza Delivery Website, 6/19/20_
 
 #### By _**James Henager**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This program is designed to let you customize your very own pizza pie! Choose your preferred size and toppings and the program will calculate the total cost for you!_
 
 ## Setup/Installation Requirements
+
+* Clone the repo from "https://github.com/jhenager/pizza-parlor.git" and open with preferred code editor.
+
+#### OR
+
+* Visit the page online at "https://jhenager.github.io/pizza-parlor/"
+
+## Specifications
 
 * The program should allow users to select pizza toppings with checkbox forms.
     - Input Example: Pepperoni, mushroom, olive
     - Output Example: Pepperoni
 
 * The program should allow users to choose which size of pizza they would like.
-    - Input Example: Medium Large
+    - Input Example: Medium, Large
     - Output Example: Large
 
 * The program should give values to the toppings and pizza sizes.
@@ -41,25 +49,17 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
     - Output Example: "The pizza is on it's way to 1234 W. Portland Street!"
 
 
-
-
-
-
-
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
-
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_The only known bug is that there is no way to subtract a pizza from the order._
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_If you have any difficulties with this program please feel free to email me jameschenager@gmail.com with questions._
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_This page was made using HTML, CSS, Javascript and Jquery._
 
 ### License
 
