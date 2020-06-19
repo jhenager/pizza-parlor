@@ -12,14 +12,29 @@ Pizza.prototype.price = function () {
 
 // User Interface Logic
 
-
+function sizeOfPizza () {
+  const pizzaSize = $("#pizzaSize").val();
+}
 
 $(document).ready(function(){
-  let pizza = new Pizza(0,0);
-  const pizzaSize = $("#pizzaSize").val();
+
+  let pizza = new Pizza(0,0,0);
   let toppings = [];
-  let toppingsValue;
+  const pizzaSize = $("#pizzaSize").val();
+  let size = pizzaSize
   
+  // console.log(pizzaSize);
+  console.log(pizza.size);
+  // if (pizzaSize === 20) {
+  //   pizza.size = 20;
+  // }
+  // else if (pizzaSize === 25) {
+  //   pizza.size = 25;
+  // }
+  // else if (pizzaSize === 30) {
+  //   pizza.size = 30;
+  // }
+  // console.log(pizza.size);
 
 
   $('input[type="checkbox"]').click(function(){
@@ -35,11 +50,10 @@ $(document).ready(function(){
     });
     
   $("button#toppingAdd").click(function(){
-    toppings.forEach(parseInt);
-    console.log(toppings);
-    return;
+      pizza.size = ($("#pizzaSize").val());
+      console.log(pizza.size);
+
   });
-   
     
   });
 
