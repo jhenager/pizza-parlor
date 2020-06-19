@@ -58,8 +58,9 @@ $(document).ready(function(){
       pizzaCalculator(pizza1);
       pizzaSizeConverter(pizza1);
       console.log(pizza1.size)
-      let pizzaCost = pizzaPrice(pizza1);
-      console.log(pizzaCost);
+      pizzaPrice(pizza1);
+      console.log(pizza1);
+      $("#total").append(" " + "$" + pizza1.toppings);
 
   });
     
