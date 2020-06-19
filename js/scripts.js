@@ -60,7 +60,7 @@ $(document).ready(function(){
       console.log(pizza1.size)
       pizzaPrice(pizza1);
       console.log(pizza1);
-      $("#total").append(" " + "$" + pizza1.toppings);
+      $(".total").text(" " + "$" + pizza1.toppings);
 
   });
     
