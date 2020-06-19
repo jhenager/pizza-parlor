@@ -7,9 +7,18 @@ function Pizza (toppings, size, price) {
 }
 
 Pizza.prototype.price = function () {
-
+  this.toppings += this.size;
 }
 
 // User Interface Logic
 
-const beverage = $("#beverage").val();
+
+$(document).ready(function(){
+  let pizza = new Pizza();
+  const beverage = $("#pizzaSize").val();
+
+
+});
+
+
+
