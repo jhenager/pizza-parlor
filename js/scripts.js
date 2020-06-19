@@ -1,12 +1,12 @@
 // Business Logic
 
-function Pizza (toppings, size,) {
+function Pizza (toppings, size) {
   this.toppings = toppings;
   this.size = size;
 }
 
 Pizza.prototype.price = function () {
-  this.toppings + this.size;
+  this.toppings += this.size;
 }
 
 // User Interface Logic
@@ -26,24 +26,27 @@ function pizzaSizeConverter (pizza) {
 function pizzaCalculator (pizza) {
   pizza.size = $("#pizzaSize").val();
   pizzaSizeConverter(pizza.size);
-  pizza.price();
-  return;
+  return pizza;
+}
+function pizzaPrice (pizza) {
+  pizza.price(pizza);
+  return pizza;
 }
 
 $(document).ready(function(){
 
-  let pizza = new Pizza(0,0);
+  let pizza1 = new Pizza(0,0);
   
   
-  console.log(pizza.size);
+  console.log(pizza1.size);
 
 
 
   $('input[type="checkbox"]').click(function(){
     if($(this).is(":checked")){
-      pizza.toppings +=1
+      pizza1.toppings +=1
   
-      console.log(pizza.toppings);
+      console.log(pizza1.toppings);
     }
     else if($(this).is(":not(:checked)")){
         console.log("Checkbox is unchecked.");
@@ -52,9 +55,11 @@ $(document).ready(function(){
     
   $("button#toppingAdd").click(function(){
       // pizza.size = ($("#pizzaSize").val());
-      pizzaCalculator(pizza);
-      pizzaSizeConverter(pizza);
-      console.log(pizza.price);
+      pizzaCalculator(pizza1);
+      pizzaSizeConverter(pizza1);
+      console.log(pizza1.size)
+      let pizzaCost = pizzaPrice(pizza1);
+      console.log(pizzaCost);
 
   });
     
