@@ -10,33 +10,33 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 ## Setup/Installation Requirements
 
-* _The program should allow users to select pizza toppings with checkbox forms.
+* The program should allow users to select pizza toppings with checkbox forms.
     - Input Example: Pepperoni, mushroom, olive
     - Output Example: Pepperoni
 
-* _The program should allow users to choose which size of pizza they would like.
+* The program should allow users to choose which size of pizza they would like.
     - Input Example: Medium Large
     - Output Example: Large
 
-* _The program should give values to the toppings and pizza sizes.
+* The program should give values to the toppings and pizza sizes.
     - Input Example: Pepperoni, Large Pizza
     - Output Example: $1.00, $20
 
-* _The program should add the values of the selected pizza size and additional toppings
+* The program should add the values of the selected pizza size and additional toppings
     - Input Example: Large pizza with pepperoni
     - Output Example: $20 + $1 = $21
 
     ### Stretch Goals
 
-* _The program should have an order button that when pressed says the order is on it's way.
+* The program should have an order button that when pressed says the order is on it's way.
     - Input Example: Button: Order Pizza
     - Output Example: "The Pizza is on it's way!"
 
-* _The program should have a form for a delivery address.
+* The program should have a form for a delivery address.
     - Input Example: Address:
     - Output Example: 1234 W. Portland Street
 
-* _The program should append the address from the form to the message displayed with the order button.
+* The program should append the address from the form to the message displayed with the order button.
     - Input Example: Order Button
     - Output Example: "The pizza is on it's way to 1234 W. Portland Street!"
 
