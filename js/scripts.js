@@ -10,27 +10,22 @@ Pizza.prototype.price = function () {
   this.totalPrice = this.toppings + this.size;
 }
 
+function getSum(total, num) {
+  return total + Math.round(num);
+}
 
 // User Interface Logic
 
-
-$(document).ready(function(){
-  let pizza1 = new Pizza(0,0);
-  
+$(document).ready(function(){ 
   $("#toppingAdd").submit(function(){
     event.preventDefault();
-    pizza1.size = parseInt($("#pizzaSize").val());
     let toppings = [];
+    let pizzaSize = parseInt($("#pizzaSize").val());
     $('input[type="checkbox"]:checked').each(function() {
       toppings.push(parseInt(this.value));
     });
-    function getSum(total, num) {
-      return total + Math.round(num);
-    }
-    function addToppings(item) {
-      pizza1.toppings = toppings.reduce(getSum, 0);
-    } 
-    addToppings();
+    let pizzaToppings = toppings.reduce(getSum, 0);
+    let pizza1 = new Pizza(pizzaToppings,pizzaSize);
     pizza1.price();
     $(".total").text(" " + "$" + pizza1.totalPrice);
   }); 
