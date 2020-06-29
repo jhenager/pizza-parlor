@@ -19,8 +19,8 @@ function getSum(total, num) {
 $(document).ready(function(){ 
   $("#toppingAdd").submit(function(){
     event.preventDefault();
+    const pizzaSize = parseInt($("#pizzaSize").val());
     let toppings = [];
-    let pizzaSize = parseInt($("#pizzaSize").val());
     $('input[type="checkbox"]:checked').each(function() {
       toppings.push(parseInt(this.value));
     });

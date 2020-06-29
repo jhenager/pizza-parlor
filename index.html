@@ -13,50 +13,52 @@
       <h1>Who Wants Pizza?</h1> 
     </div>
     <row>
-      <div class="col-md-4">
-        <form id="toppingAdd">
-          <h3>Select a Size</h3>
-        <select class="form-control" id="pizzaSize">
-          <option value=20>Small: $20</option>
-          <option value=25>Medium: $25</option>
-          <option value=30>Large: $30</option>
-        </select>
-          <h3>Select Your Toppings:</h3>
-          <label class="container">Pepperoni: $1
-            <input type="checkbox" id="pepperoni" value="1">
-            <span class="checkmark"></span>
-          </label>
-          <label class="container">Mushroom: $1
-            <input type="checkbox" id="mushroom" value="1">
-            <span class="checkmark"></span>
-          </label>
-          <label class="container">Artichoke: $2
-            <input type="checkbox" id="artichoke" value="2">
-            <span class="checkmark"></span>
-          </label>
-          <label class="container">Olives: $1
-            <input type="checkbox" id="olives" value="1">
-            <span class="checkmark"></span>
-          </label>
-          <label class="container">Anchovies: $2
-            <input type="checkbox" id="anchovies" value="2">
-            <span class="checkmark"></span>
-          </label>
-          <label class="container">Pineapple: $1
-            <input type="checkbox" id="pineapple" value="1">
-            <span class="checkmark"></span>
-          </label>
-          <label class="container">Sausage: $1
-            <input type="checkbox" id="sausage" value="1">
-            <span class="checkmark"></span>
-          </label>
-          <button type="submit" class="btn">Calculate Order:</button>
-        </form>
-      </div>
-      <div class="col-md-4">
-        <h3 id="total">Total Order:</h3>
-        <div class="total"></div>
-      </div>
+      <container>
+        <div class="col-md-6">
+          <form id="toppingAdd">
+            <h3>Select a Size</h3>
+          <select class="form-control" id="pizzaSize">
+            <option value=20>Small: $20</option>
+            <option value=25>Medium: $25</option>
+            <option value=30>Large: $30</option>
+          </select>
+            <h3>Select Your Toppings:</h3>
+            <label class="container">Pepperoni: $1
+              <input type="checkbox" id="pepperoni" value="1">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Mushroom: $1
+              <input type="checkbox" id="mushroom" value="1">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Artichoke: $2
+              <input type="checkbox" id="artichoke" value="2">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Olives: $1
+              <input type="checkbox" id="olives" value="1">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Anchovies: $2
+              <input type="checkbox" id="anchovies" value="2">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Pineapple: $1
+              <input type="checkbox" id="pineapple" value="1">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Sausage: $1
+              <input type="checkbox" id="sausage" value="1">
+              <span class="checkmark"></span>
+            </label>
+            <button type="submit" class="btn">Calculate Order:</button>
+          </form>
+        </div>
+        <div class="col-md-6" id="pizzaBox">
+          <h3 id="total">Total Order:</h3>
+          <div class="total"></div>
+        </div>
+    </container>
     </row>
   </div>
 </body>
